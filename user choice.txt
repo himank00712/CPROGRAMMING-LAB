@@ -1,0 +1,33 @@
+
+#include<stdio.h>
+void main ()
+
+{
+	int a, l, b, s, r;
+	printf(" select any one:\n 1.square\n 2.circle \n 3. rectangle\n");
+	scanf_s("%d", &a);
+	switch (a)
+	{
+	case 1:
+		printf(" enter side of square:\n");
+		scanf_s("%d", &s);
+		printf(" area of square is :%d", s * s);
+		printf("\nperimter of square is :%d", 4 * s);
+		break;
+	case 2:
+		printf(" enter radius of circle:");
+		scanf_s("%d", &r);
+		printf(" area of cirle is:\n%d", 3.14 * r * r);
+		printf("perimeter of circle is :\n%d", 2 * 3.14 * r); 
+                break;
+	case 3:
+		printf("enter length and breadth of rectangle:\n");
+		scanf_s("%d%d", &l, &b);
+		printf(" area of rectangle is :%d", l * b);
+		printf("\nperimeter of rectangle is:%d", 2 * (l + b));
+		break;
+	default:
+		printf("enter number between 1 to 3");
+		break;
+	}
+        }
